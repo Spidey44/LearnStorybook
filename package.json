@@ -10,9 +10,11 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "npx chromatic --project-token=175091e7b590"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^6.4.19",
     "@storybook/addon-actions": "^6.4.8",
     "@storybook/addon-essentials": "^6.4.8",
     "@storybook/addon-interactions": "^6.4.8",
@@ -23,7 +25,7 @@
     "@storybook/react": "^6.4.8",
     "@storybook/testing-library": "^0.0.7",
     "@storybook/testing-react": "^1.2.2",
-    "chromatic": "^6.2.0",
+    "chromatic": "^6.5.2",
     "grunt": "^1.4.1",
     "grunt-contrib-less": "^3.0.0",
     "grunt-contrib-watch": "^1.1.0",
