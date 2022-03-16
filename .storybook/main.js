@@ -8,4 +8,7 @@ module.exports = {
     "@storybook/addon-interactions",
     '@storybook/addon-a11y',
   ],
+  features: {
+    interactionsDebugger: true,
+  },
 };
