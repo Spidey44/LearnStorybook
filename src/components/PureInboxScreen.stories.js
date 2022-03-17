@@ -48,4 +48,11 @@ WithInteractions.play = async ({ canvasElement }) => {
   await fireEvent.click(canvas.getByLabelText("pinTask-1"));
   // Simulates pinning the third task
   await fireEvent.click(canvas.getByLabelText("pinTask-3"));
+  // Simulates pinning the new task
+  await fireEvent.click(canvas.getByLabelText("pinTask-2"));
+  // Simulates pinning the new task
+  await fireEvent.click(canvas.getByLabelText("pinTask-4"));
+  // Simulates pinning the first task
+  await fireEvent.click(canvas.getByLabelText("pinTask-6"));
+  
 };
