@@ -20,8 +20,10 @@ it("renders Default", () => {
 });
 
 it("renders Pinned", () => {
-  render(<Pinned />);
-  screen.debug()
+  render(<Pinned onPinTask={jest.fn()} />);
+  const checkbox = screen.getByLabelText("pinTask-1")
+  expect(fireEvent.click(checkbox)).toBeTruthy()
+  
 });
 
 it("renders Archived", () => {
@@ -37,6 +39,5 @@ it("renders longTitle", () => {
   const checkbox = screen.getByRole('checkbox');
   expect(checkbox).toBeDisabled();
   expect(checkbox).not.toBeChecked();
-  //screen.debug()
 
 });
